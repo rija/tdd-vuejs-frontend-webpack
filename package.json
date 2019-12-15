@@ -1,0 +1,25 @@
+{
+  "name": "tdd-vuejs-frontend-webpack",
+  "version": "1.0.0",
+  "description": "boilerplate for vuejs for old school web pages, testing using jasmine and karma",
+  "private": true,
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "css-loader": "^3.3.2",
+    "vue-loader": "^15.7.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "Rija Menage",
+  "license": "MIT"
+}

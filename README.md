@@ -1,6 +1,6 @@
 # Example/Boiler-plate for a TDD-ed VueJS frontend to webapps
 
-Using vuejs, webpack, karma, jasmine
+Using vuejs's Single File Components, webpack, karma, jasmine
 
 ## Get started
 

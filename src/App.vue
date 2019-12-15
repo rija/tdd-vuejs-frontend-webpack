@@ -5,11 +5,14 @@
         </header>
         <nav class="site">
         </nav>
-        <main>main goes here</main>
+        <main>
+            <UserNameComponent />
+        </main>
         <footer></footer>
     </div>
 </template>
 <script>
+import UserNameComponent from './components/UserNameComponent.vue'
 export default {
     data: function() {
         return {
@@ -17,8 +20,11 @@ export default {
         }
     },
     created: function() {
-    	document.title = this.title
+        document.title = this.title
     },
+    components: {
+        UserNameComponent
+    }
 }
 </script>
 <style src="./App.css"></style>

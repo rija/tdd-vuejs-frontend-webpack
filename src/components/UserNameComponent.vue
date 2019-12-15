@@ -1,6 +1,6 @@
 <template>
     <div>
-        <label for="username-field">{{ prompt }}</label>
+        <label class="form-label" for="username-field">{{ prompt }}</label>
         <input id="username-field" v-model="username" />
     </div>
 </template>

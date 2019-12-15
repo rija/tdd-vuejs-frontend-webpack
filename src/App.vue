@@ -18,12 +18,7 @@ export default {
     },
     created: function() {
     	document.title = this.title
-    }
+    },
 }
 </script>
-<style>
-h1 {
-    text-align: center;
-    text-decoration: underline;
-}
-</style>
+<style src="./App.css"></style>

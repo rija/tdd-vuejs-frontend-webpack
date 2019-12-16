@@ -41,7 +41,9 @@ describe('Username component', function () {
 	    })
 	    let shortOne = Array(wrapper.vm.minLength-1).join().split(',').map(function() { return 'a' }).join('')
 	    wrapper.setData({username: shortOne})
-	    expect(wrapper.find('.error').exists()).toBeTruthy()
+	   	Vue.nextTick().then(function () {
+			expect(wrapper.find('.error').exists()).toBeTruthy()
+	   	})
 	})
 
 	it('does not show an error if username is just long enough', function() {

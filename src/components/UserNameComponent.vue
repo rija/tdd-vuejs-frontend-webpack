@@ -2,7 +2,7 @@
     <div>
         <label class="form-label" for="username-field">{{ fullPrompt }}</label>
         <input id="username-field" v-model="username" />
-        <div v-if="error" class="error">
+        <div v-if="error && username!==''" class="error">
             {{ error }}
         </div>
     </div>

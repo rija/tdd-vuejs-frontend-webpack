@@ -71,4 +71,14 @@ describe('Username component', function () {
 	      expect(wrapper.find('.error').exists()).toBeFalse()
 	   })
 	})
+
+	it('returns an error but does not display it if username is empty', function() {
+		const wrapper = factory({
+		        prompt: 'foo bar',
+		        username: '',
+		        minLength: 4,
+	    })
+	    expect(wrapper.vm.error).toBeTruthy()
+	    expect(wrapper.find('.error').exists()).toBeFalse()
+	})
 })

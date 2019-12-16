@@ -21,3 +21,8 @@ $ npm run build
 ```
 $ npm run test
 ```
+
+## Background
+
+This is a follow up to my single web page CodePen example for testing a VueJS app using Jasmine: 
+[VueJS Unit testing with Jasmine](https://codepen.io/rija/pen/yLyJYEq)

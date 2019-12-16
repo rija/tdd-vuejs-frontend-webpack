@@ -20,4 +20,12 @@ describe('Page Info Component', function () {
 		const wrapper = factory() //make sure this come after Date's class has been overwritten
 		expect(wrapper.find('.footer').text()).toContain(new Date().toDateString())
 	})
+
+	it('should show the date the page was loaded (Y2K38+)', function () {
+
+		const theFakeNow = new Date('2039-06-05')
+	    jasmine.clock().mockDate(theFakeNow) //install the fake Date class and mock the current date
+		const wrapper = factory() //make sure this come after Date's class has been overwritten
+		expect(wrapper.find('.footer').text()).toContain(new Date().toDateString())
+	})
 })

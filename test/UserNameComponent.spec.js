@@ -56,4 +56,17 @@ describe('Username component', function () {
 	      expect(wrapper.find('.error').exists()).toBeFalse()
 	   })
 	})
+
+	it('does not show an error if username is more than long enough', function() {
+		const wrapper = factory({
+		        prompt: 'foo bar',
+		        username: '',
+		        minLength: 4,
+	    })
+	    let longEnough = Array(wrapper.vm.minLength+1).join().split(',').map(function() { return 'a' }).join('')
+	    wrapper.setData({username: longEnough})
+	    Vue.nextTick().then(function () {
+	      expect(wrapper.find('.error').exists()).toBeFalse()
+	   })
+	})
 })

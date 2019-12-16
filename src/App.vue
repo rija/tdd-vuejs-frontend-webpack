@@ -8,11 +8,14 @@
         <main>
             <UserNameComponent />
         </main>
-        <footer></footer>
+        <footer>
+            <PageInfoComponent />
+        </footer>
     </div>
 </template>
 <script>
 import UserNameComponent from './components/UserNameComponent.vue'
+import PageInfoComponent from './components/PageInfoComponent.vue'
 export default {
     data: function() {
         return {
@@ -23,7 +26,8 @@ export default {
         document.title = this.title
     },
     components: {
-        UserNameComponent
+        UserNameComponent,
+        PageInfoComponent
     }
 }
 </script>

@@ -2,8 +2,8 @@
     <div>
         <label class="form-label" for="username-field">{{ fullPrompt }}</label>
         <input id="username-field" v-model="username" />
-        <div class="error" v-if="error">
-            The username is too short, choose another one
+        <div v-if="error" class="error">
+            {{ error }}
         </div>
     </div>
 </template>
@@ -24,7 +24,7 @@ export default {
             return this.prompt + ' ('+this.minLength+' char. min.):';
         },
         error: function () {
-            return this.username.trim().length < this.minLength
+            return this.username.trim().length < this.minLength ? 'The username is too short, choose another one' : ''
         }
     }
 }

@@ -32,7 +32,7 @@ describe('Username component', function () {
 		expect(wrapper.vm.fullPrompt).toBe('foo bar ('+wrapper.vm.minLength+' char. min.):')
 	})
 
-	it('detects if username is too short', function() {
+	it('shows an error if username is too short', function() {
 		const wrapper = factory({
 		        prompt: 'foo bar',
 		        username: '',

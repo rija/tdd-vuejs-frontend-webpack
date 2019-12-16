@@ -17,7 +17,7 @@ describe('Username component', function () {
 		const wrapper = factory({
 		        prompt: 'foo bar',
 		        username: '',
-			})
+		})
 
 		expect(wrapper.find('.form-label').text()).toContain(wrapper.vm.prompt)
 	})
@@ -27,8 +27,19 @@ describe('Username component', function () {
 		        prompt: 'foo bar',
 		        username: '',
 		        minLength: 4,
-	    	})
+	    })
 
 		expect(wrapper.vm.fullPrompt).toBe('foo bar ('+wrapper.vm.minLength+' char. min.):')
+	})
+
+	it('detects if username is too short', function() {
+		const wrapper = factory({
+		        prompt: 'foo bar',
+		        username: '',
+		        minLength: 4,
+	    })
+	    let shortOne = Array(wrapper.vm.minLength-1).join().split(',').map(function() { return 'a' }).join('')
+	    wrapper.setData({username: shortOne})
+	    expect(wrapper.find('.error').exists()).toBeTruthy()
 	})
 })

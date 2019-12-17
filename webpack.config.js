@@ -1,5 +1,5 @@
-// https://vue-loader.vuejs.org/guide/#manual-setup
-
+// based on config from https://vue-loader.vuejs.org/guide/#manual-setup
+const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {

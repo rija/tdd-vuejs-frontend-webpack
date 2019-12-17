@@ -29,7 +29,7 @@
     "webpack-cli": "^3.3.10"
   },
   "scripts": {
-    "test": "karma start --single-run",
+    "test": "karma start --no-watch --no-progress",
     "build": "webpack"
   },
   "author": "Rija Menage",

@@ -15,10 +15,12 @@
     "@vue/test-utils": "^1.0.0-beta.30",
     "babel-loader": "^8.0.6",
     "babel-plugin-istanbul": "^5.2.0",
+    "cross-env": "^6.0.3",
     "css-loader": "^3.3.2",
     "jasmine-core": "^3.5.0",
     "karma": "^4.4.1",
     "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.1",
     "karma-firefox-launcher": "^1.2.0",
     "karma-jasmine": "^2.0.1",
     "karma-spec-reporter": "0.0.32",
@@ -29,7 +31,7 @@
     "webpack-cli": "^3.3.10"
   },
   "scripts": {
-    "test": "karma start --no-watch --no-progress",
+    "test": "cross-env BABEL_ENV=test karma start --no-watch --no-progress",
     "build": "webpack"
   },
   "author": "Rija Menage",

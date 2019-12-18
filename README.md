@@ -1,10 +1,12 @@
+[![Build Status](https://travis-ci.org/rija/tdd-vuejs-frontend-webpack.svg?branch=master)](https://travis-ci.org/rija/tdd-vuejs-frontend-webpack)
+
 # Example/Boiler-plate for a TDD-ed VueJS frontend to webapps
 
-Using vuejs's Single File Components, webpack, karma, jasmine
+Using Vuejs's Single File Components, Webpack, Karma, Jasmine
 
 ## Get started
 
-**prerequisites:** NodeJS, Chrome
+**prerequisites:** NodeJS, Chrome, Firefox
 
 ```
 $ npm install
@@ -21,18 +23,18 @@ $ npm run build
 On one terminal window/tab, start the Karma server:
 
 ```
-$ npx cross-env BABEL_ENV=test karma start --no-watch --no-progress
+$ npx cross-env BABEL_ENV=test karma start
 ```
 
-Then on your main terminal, to run the test, type:
+Normally, the test suite will run whenever the code changes, but if one wants to trigger an explicit test run, this is the command to type:
 ```
-$ npm run test
+$ npm test
 ```
 
-If you don't want to start a server, you can do a single run of karma. Not advised though as it's a bit fragile
+If starting a server is not desirable (e.g: CI), this one-off command will run the tests in a standalone fashion:
 
 ```
-$ npx cross-env BABEL_ENV=test karma start -no-watch --no-progress --single-run
+$ npx cross-env BABEL_ENV=test karma start --single-run
 ```
 
 ## Background
@@ -42,7 +44,7 @@ Inspired by the examples from VueJS docs and the boilerplate Github repo made by
 _**Note**: Whose book can be found here:[Testing Vue.js Applications](https://www.manning.com/books/testing-vue-js-applications)_
 
 
-I wanted to create a skeleton project for the future me whenever I need to spin off a VueJS project to test with Jasmine while learning how to use these tools together.
+I wanted to create a skeleton project that works in 2019 for the _"future me"_ whenever I need to spin off a VueJS project to test with Jasmine while learning how to use these tools together.
 
 
 This is a follow up to my single web page CodePen example for testing a VueJS app using Jasmine: 

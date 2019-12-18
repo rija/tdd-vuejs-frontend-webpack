@@ -8,4 +8,4 @@ addons:
 language: node_js
 node_js:
   - 8
-script: npx cross-env BABEL_ENV=test karma start -no-watch --no-progress --single-run
+script: npx cross-env BABEL_ENV=test karma start --single-run

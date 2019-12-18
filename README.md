@@ -16,10 +16,23 @@ $ npm install
 $ npm run build
 ```
 
-## Run the test
+## Running the tests
+
+On one terminal window/tab, start the Karma server:
 
 ```
+$ npx cross-env BABEL_ENV=test karma start --no-watch --no-progress
+```
+
+Then on your main terminal, to run the test, type:
+```
 $ npm run test
+```
+
+If you don't want to start a server, you can do a single run of karma. Not advised though as it's a bit fragile
+
+```
+$ npx cross-env BABEL_ENV=test karma start -no-watch --no-progress --single-run
 ```
 
 ## Background

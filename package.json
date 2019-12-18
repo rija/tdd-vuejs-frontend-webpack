@@ -31,7 +31,7 @@
     "webpack-cli": "^3.3.10"
   },
   "scripts": {
-    "test": "cross-env BABEL_ENV=test karma start --no-watch --no-progress",
+    "test": "cross-env BABEL_ENV=test karma run",
     "build": "webpack"
   },
   "author": "Rija Menage",

@@ -8,14 +8,14 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
 
     files: [
-      'test/testloader.js'
+      'test/**/*.spec.js'
     ],
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: { //do not add 'coverage' here, as code already instrumented in babel plugin
       'src/**/*.js': ['webpack'],
-      'test/testloader.js': ['webpack']
+      '**/*.spec.js': ['webpack']
     },
 
     webpack: webpackConfig,

@@ -44,8 +44,13 @@ Inspired by the examples from VueJS docs and the boilerplate Github repo made by
 _**Note**: Whose book can be found here:[Testing Vue.js Applications](https://www.manning.com/books/testing-vue-js-applications)_
 
 
-I wanted to create a skeleton project that works in 2019 for the _"future me"_ whenever I need to spin off a VueJS project to test with Jasmine while learning how to use these tools together.
+I wanted to create a skeleton project that works in 2019 for the _"Future me"_ whenever I need to spin off a VueJS project to test with Jasmine while learning how to use these tools together.
 
 
 This is a follow up to my single web page CodePen example for testing a VueJS app using Jasmine: 
 [VueJS Unit testing with Jasmine](https://codepen.io/rija/pen/yLyJYEq)
+
+## TODO
+
+* [ ] Fix coverage
+* [ ] Add Safari to the list of browsers
